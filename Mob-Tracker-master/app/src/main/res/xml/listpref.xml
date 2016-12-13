@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:key="key_color"
+        android:title="background Color"
+        android:defaultValue="#53F22C"
+        android:entries="@array/color_name"
+        android:entryValues="@array/color_values"
+        android:icon="@drawable/warning"
+        android:summary="Choose a background">
+    </ListPreference>
+
+    <EditTextPreference
+        android:key="phone_number"
+        android:title="phone_number"
+        android:icon="@drawable/phone"
+        android:summary="provide choosen number"
+        android:textIsSelectable="false"
+        android:phoneNumber="true"
+        android:numeric="integer"
+        android:inputType="phone">
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:key="email_address"
+        android:title="Enter your Email"
+        android:icon="@drawable/contact_mail"
+        android:summary="enter an email"
+        android:editable="false"
+        android:inputType="textWebEmailAddress">
+    </EditTextPreference>
+
+    <PreferenceCategory android:title="other categories"></PreferenceCategory>
+
+    <ListPreference
+        android:key="timer_preference"
+        android:title="Set timer"
+        android:entries="@array/time_opt"
+        android:entryValues="@array/time_opt_values"
+        android:icon="@drawable/alarm_add"
+        android:summary="Alarm Hours">
+    </ListPreference>
+
+    <SwitchPreference
+        android:key="override_preference"
+        android:title="Override Mode"
+        android:icon="@drawable/tune"
+        android:summary="Override Silent Mode"
+        android:minWidth="@dimen/fab_margin">
+    </SwitchPreference>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PreferenceScreen>
